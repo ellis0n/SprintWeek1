@@ -3,6 +3,9 @@
 # Written between February 25th 2022 and March 6th 2022
 # This program does, uh, what?
 
+import datetime as dt
+
+
 # Function for calculating travel claims for NL Chocolate Factory
 def travelClaim():
     print("Travel Claim Program")
@@ -19,10 +22,16 @@ def strDate():
 def graphClaim():
     print("Graph")
 
+# Hidden function that converts float to formatted dollar Value
+def currency():
+    print("Dollar Value: ")
+
+# Hidden function that calculates X (Miles to Kilometres?)
+def hidfunc2():
+    print("What this does is anyones guess...")
 
 #Main menu/program
 print("NL Chocolate Company")
-
 print("Travel Claims Processing System")
 print("")
 print("1. Enter an Employee Travel Claim.")
@@ -52,5 +61,3 @@ while True:
         graphClaim()
     elif userChoice == "5":
         quit()
-    else:
-        print("Try again?")
