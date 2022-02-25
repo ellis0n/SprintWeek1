@@ -1,2 +1,1 @@
-# Glen's assigned function.
-a = 2
+#Glen's function
