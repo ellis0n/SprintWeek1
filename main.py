@@ -3,6 +3,7 @@
 # Written between February 25th 2022 and March 6th 2022
 # This program does, uh, what?
 
+# Make sure to install "pip install MatPlotLib" in the terminal
 import matplotlib.pyplot as plt
 
 # Function for calculating travel claims for NL Chocolate Factory
