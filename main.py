@@ -182,7 +182,7 @@ while True:
     elif userChoice == "3":
         strDate()
     elif userChoice == "4":
-        graphClaim()
+        Graph()
     elif userChoice == "5":
         quit()
     else:
