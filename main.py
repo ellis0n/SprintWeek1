@@ -48,7 +48,36 @@ def Graph():
     return plt.show()
 
 
-Sales = []
+#Main menu/program
+print("NL Chocolate Company")
+
+print("Travel Claims Processing System")
+print("")
+print("1. Enter an Employee Travel Claim.")
+print("2. Fun Interview Question.")
+print("3. Cool Stuff with Strings and Dates.")
+print("4. Graph Monthly Claim Totals.")
+print("5. Quit Program.")
+print("")
+
+while True:
+    userChoice = input("   Enter Choice (1-5): ")
+    if userChoice == "":
+        print("Entry cannot be blank.")
+    elif (userChoice.isnumeric()) ==  False:
+        print("Entry not recognized.")
+    elif int(userChoice) > 5:
+        print("Entry not recognized.")
+    elif int(userChoice) == 0:
+        print("Entry not recognized.")
+    elif userChoice == "1":
+        travelClaim()
+    elif userChoice == "2":
+        fizzBang()
+    elif userChoice == "3":
+        strDate()
+    elif userChoice == "4":
+        Sales = []
 while True:
     print("Input Your Monthly Sales Total Below")
     print()
@@ -150,40 +179,8 @@ while True:
             Sales.append(Dec)
             break
     break
-
-Graph()
-
-
-#Main menu/program
-print("NL Chocolate Company")
-
-print("Travel Claims Processing System")
-print("")
-print("1. Enter an Employee Travel Claim.")
-print("2. Fun Interview Question.")
-print("3. Cool Stuff with Strings and Dates.")
-print("4. Graph Monthly Claim Totals.")
-print("5. Quit Program.")
-print("")
-
-while True:
-    userChoice = input("   Enter Choice (1-5): ")
-    if userChoice == "":
-        print("Entry cannot be blank.")
-    elif (userChoice.isnumeric()) ==  False:
-        print("Entry not recognized.")
-    elif int(userChoice) > 5:
-        print("Entry not recognized.")
-    elif int(userChoice) == 0:
-        print("Entry not recognized.")
-    elif userChoice == "1":
-        travelClaim()
-    elif userChoice == "2":
-        fizzBang()
-    elif userChoice == "3":
-        strDate()
-    elif userChoice == "4":
         Graph()
+        
     elif userChoice == "5":
         quit()
     else:
