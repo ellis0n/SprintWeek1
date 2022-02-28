@@ -38,7 +38,7 @@ def bonus(empYears):
 def retirementBonus(empYears):
     retireBonus = RETIRE_BONUS * empYears
     tenureBonus = 0
-    if empYears >= 20:
+    if empYears >= 10:
         tenureBonus = TENURE_BONUS
     return retireBonus, tenureBonus
 
@@ -54,15 +54,15 @@ def blank(x):
 # Gather required user information. NOTE: Create a function for date validation?
 while True:
     while True:
-        firstName = "Joanie"  # input("Employee first name: ")
+        firstName = input("Employee first name: ")
         if blank(firstName) == False:
             break
     while True:
-        lastName = "Whitten"  # input("Employee last name: ")
+        lastName = input("Employee last name: ")
         if blank(lastName) == False:
             break
     while True:
-        phoneNum = "7097287272"  # input("Employee 10-digit phone number [numbers only]: ")
+        phoneNum = input("Employee 10-digit phone number [numbers only]: ")
         if blank(phoneNum) == False:
             try:
                 if len(phoneNum) == 10:
@@ -75,7 +75,7 @@ while True:
                 print("Phone number not recognized.")
     while True:
         try:
-            startDay = "2000-02-28"  # input("Employee start date as YYYY-MM-DD: ")
+            startDay = "2010-02-28"  # input("Employee start date as YYYY-MM-DD: ")
             startDay = dt.strptime(startDay, "%Y-%m-%d")
         except:
             print("Date not valid or format not recognized.")
@@ -83,7 +83,7 @@ while True:
             break
     while True:
         try:
-            birthDay = "1954-02-28"  # input("Employee birthday as YYYY-MM-DD: ")
+            birthDay = input("Employee birthday as YYYY-MM-DD: ")
             birthDay = dt.strptime(birthDay, "%Y-%m-%d")
         except:
             print("Date not valid or format not recognized. ")
