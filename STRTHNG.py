@@ -8,12 +8,12 @@ from datetime import datetime as dt
 from datetime import timedelta as td
 
 STANDARD_BONUS = 350.00  # Payable to employees after 2 years of employment..
-LON_BONUS = 50.00  # Replaces the standard bonus at 8 years of employment. Paid per year of emplotment.
+LON_BONUS = 50.00  # Replaces the standard bonus at 8 years of employment. Paid per year of employment.
 SERVICE_CAP = 20  # Longevity bonus yearly multiplier limit.
 RETIRE_CAP = 65  # Company policy for mandatory retirement at age 65.
 RETIRE_BONUS = 100.00  # Replaces standard and longevity bonus and is paid on retirement.
 TENURE_BONUS = 200.00  # Paid in addition to retirement bonus for exceptional length of employment.
-CUR_DATE = dt.now()  # Can be changed to fiscal year end date if required.
+CUR_DATE = dt.now()  # Can be changed to fiscal year-end date if required.
 
 
 # Uses employee tenure to calculate standard, longevity and retention bonuses where applicable.
@@ -29,14 +29,15 @@ def bonus(empYears):
             for year in range(9, int(empYears)):
                 addBonus = empYears * 10
     elif empYears > 20:
-            lonBonus = LON_BONUS * SERVICE_CAP
-            addBonus = SERVICE_CAP * 10
+        lonBonus = LON_BONUS * SERVICE_CAP
+        addBonus = SERVICE_CAP * 10
     return [lonBonus, addBonus]
 
 
 # Calculates retirement bonus where applicable
 def retirementBonus(empYears):
     retireBonus = RETIRE_BONUS * empYears
+    tenureBonus = 0
     if empYears >= 20:
         tenureBonus = TENURE_BONUS
     return retireBonus, tenureBonus
@@ -45,23 +46,23 @@ def retirementBonus(empYears):
 # Prevents empty user inputs.
 def blank(x):
     if x == "":
-        return (True)
+        return True
     else:
-        return (False)
+        return False
 
 
 # Gather required user information. NOTE: Create a function for date validation?
 while True:
     while True:
-        firstName = "Joanie" #input("Employee first name: ")
+        firstName = "Joanie"  # input("Employee first name: ")
         if blank(firstName) == False:
             break
     while True:
-        lastName = "Whitten" #input("Employee last name: ")
+        lastName = "Whitten"  # input("Employee last name: ")
         if blank(lastName) == False:
             break
     while True:
-        phoneNum = "7097287272" #input("Employee 10 digit phone number [numbers only]: ")
+        phoneNum = "7097287272"  # input("Employee 10-digit phone number [numbers only]: ")
         if blank(phoneNum) == False:
             try:
                 if len(phoneNum) == 10:
@@ -74,7 +75,7 @@ while True:
                 print("Phone number not recognized.")
     while True:
         try:
-            startDay = "2020-02-28" # input("Employee start date as YYYY-MM-DD: ")
+            startDay = "2000-02-28"  # input("Employee start date as YYYY-MM-DD: ")
             startDay = dt.strptime(startDay, "%Y-%m-%d")
         except:
             print("Date not valid or format not recognized.")
@@ -82,7 +83,7 @@ while True:
             break
     while True:
         try:
-            birthDay = "2021-02-28"  # input("Employee birthday as YYYY-MM-DD: ")
+            birthDay = "1954-02-28"  # input("Employee birthday as YYYY-MM-DD: ")
             birthDay = dt.strptime(birthDay, "%Y-%m-%d")
         except:
             print("Date not valid or format not recognized. ")
@@ -103,7 +104,7 @@ elif curAge >= 65:
     retireCheck = True
 bonus1 = "${:.2f}".format(bonus[0])
 bonus2 = "${:.2f}".format(bonus[1])
-name = firstName+" "+lastName
+name = firstName + " " + lastName
 
 # Printout for user display.
 print("")
