@@ -233,7 +233,7 @@ while True:
             print()
             while True:
                 try:
-                    Jan = float(input("Enter the Total Sales For January: "))
+                    Jan = float(input("Enter the Total Travel Claims For January: "))
                 except:
                     print("January must have a valid number entry please - re-enter.")
                 else:
@@ -241,7 +241,7 @@ while True:
                     break
             while True:
                 try:
-                    Feb = float(input("Enter the Total Sales For February: "))
+                    Feb = float(input("Enter the Total Travel Claims For February: "))
                 except:
                     print("February must have a valid number entry please - re-enter.")
                 else:
@@ -249,7 +249,7 @@ while True:
                     break
             while True:
                 try:
-                    Mar = float(input("Enter the Total Sales For March: "))
+                    Mar = float(input("Enter the Total Travel Claims For March: "))
                 except:
                     print("March must have a valid number entry please - re-enter.")
                 else:
@@ -257,7 +257,7 @@ while True:
                     break
             while True:
                 try:
-                    Apr = float(input("Enter the Total Sales For April: "))
+                    Apr = float(input("Enter the Total Travel Claims For April: "))
                 except:
                     print("April must have a valid number entry please - re-enter.")
                 else:
@@ -265,7 +265,7 @@ while True:
                     break
             while True:
                 try:
-                    May = float(input("Enter the Total Sales For May: "))
+                    May = float(input("Enter the Total Travel Claims For May: "))
                 except:
                     print("May must have a valid number entry please - re-enter.")
                 else:
@@ -273,7 +273,7 @@ while True:
                     break
             while True:
                 try:
-                    Jun = float(input("Enter the Total Sales For June: "))
+                    Jun = float(input("Enter the Total Travel Claims For June: "))
                 except:
                     print("June must have a valid number entry please - re-enter.")
                 else:
@@ -281,7 +281,7 @@ while True:
                     break
             while True:
                 try:
-                    Jul = float(input("Enter the Total Sales For July: "))
+                    Jul = float(input("Enter the Total Travel Claims For July: "))
                 except:
                     print("July must have a valid number entry please - re-enter.")
                 else:
@@ -289,7 +289,7 @@ while True:
                     break
             while True:
                 try:
-                    Aug = float(input("Enter the Total Sales For August: "))
+                    Aug = float(input("Enter the Total Travel Claims For August: "))
                 except:
                     print("August must have a valid number entry please - re-enter.")
                 else:
@@ -297,7 +297,7 @@ while True:
                     break
             while True:
                 try:
-                    Sep = float(input("Enter the Total Sales For September: "))
+                    Sep = float(input("Enter the Total Travel Claims For September: "))
                 except:
                     print("September must have a valid number entry please - re-enter.")
                 else:
@@ -305,7 +305,7 @@ while True:
                     break
             while True:
                 try:
-                    Oct = float(input("Enter the Total Sales For October: "))
+                    Oct = float(input("Enter the Total Travel Claims For October: "))
                 except:
                     print("October cannot be blank.")
                 else:
@@ -313,7 +313,7 @@ while True:
                     break
             while True:
                 try:
-                    Nov = float(input("Enter the Total Sales For November: "))
+                    Nov = float(input("Enter the Total Travel Claims For November: "))
                 except:
                     print("November must have a valid number entry please - re-enter.")
                 else:
@@ -321,7 +321,7 @@ while True:
                     break
             while True:
                 try:
-                    Dec = float(input("Enter the Total Sales For December: "))
+                    Dec = float(input("Enter the Total Travel Claims For December: "))
                 except:
                     print("December must have a valid number entry please - re-enter.")
                 else:
