@@ -179,7 +179,7 @@ def Graph():
 
     # Formatting x/y-axis, titles and graph
     xaxis = Mths
-    yaxis = Sales
+    yaxis = Claims
 
     ax.plot(xaxis, yaxis, color="cyan", marker="o")
 
@@ -227,7 +227,7 @@ while True:
         print()
         main()
     elif userChoice == "4":
-        Sales = []
+        Claims = []
         while True:
             print("Input Your Monthly Sales Total Below")
             print()
