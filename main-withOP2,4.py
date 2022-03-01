@@ -237,7 +237,7 @@ while True:
                 except:
                     print("January must have a valid number entry please - re-enter.")
                 else:
-                    Sales.append(Jan)
+                    Claims.append(Jan)
                     break
             while True:
                 try:
@@ -245,7 +245,7 @@ while True:
                 except:
                     print("February must have a valid number entry please - re-enter.")
                 else:
-                    Sales.append(Feb)
+                    Claims.append(Feb)
                     break
             while True:
                 try:
@@ -253,7 +253,7 @@ while True:
                 except:
                     print("March must have a valid number entry please - re-enter.")
                 else:
-                    Sales.append(Mar)
+                    Claims.append(Mar)
                     break
             while True:
                 try:
@@ -261,7 +261,7 @@ while True:
                 except:
                     print("April must have a valid number entry please - re-enter.")
                 else:
-                    Sales.append(Apr)
+                    Claims.append(Apr)
                     break
             while True:
                 try:
@@ -269,7 +269,7 @@ while True:
                 except:
                     print("May must have a valid number entry please - re-enter.")
                 else:
-                    Sales.append(May)
+                    Claims.append(May)
                     break
             while True:
                 try:
@@ -277,7 +277,7 @@ while True:
                 except:
                     print("June must have a valid number entry please - re-enter.")
                 else:
-                    Sales.append(Jun)
+                    Claims.append(Jun)
                     break
             while True:
                 try:
@@ -285,7 +285,7 @@ while True:
                 except:
                     print("July must have a valid number entry please - re-enter.")
                 else:
-                    Sales.append(Jul)
+                    Claims.append(Jul)
                     break
             while True:
                 try:
@@ -293,7 +293,7 @@ while True:
                 except:
                     print("August must have a valid number entry please - re-enter.")
                 else:
-                    Sales.append(Aug)
+                    Claims.append(Aug)
                     break
             while True:
                 try:
@@ -301,7 +301,7 @@ while True:
                 except:
                     print("September must have a valid number entry please - re-enter.")
                 else:
-                    Sales.append(Sep)
+                    Claims.append(Sep)
                     break
             while True:
                 try:
@@ -309,7 +309,7 @@ while True:
                 except:
                     print("October cannot be blank.")
                 else:
-                    Sales.append(Oct)
+                    Claims.append(Oct)
                     break
             while True:
                 try:
@@ -317,7 +317,7 @@ while True:
                 except:
                     print("November must have a valid number entry please - re-enter.")
                 else:
-                    Sales.append(Nov)
+                    Claims.append(Nov)
                     break
             while True:
                 try:
@@ -325,7 +325,7 @@ while True:
                 except:
                     print("December must have a valid number entry please - re-enter.")
                 else:
-                    Sales.append(Dec)
+                    Claims.append(Dec)
                     break
             break
 
