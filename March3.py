@@ -142,9 +142,12 @@ def travelClaim():
 
         # Perform calculations using inputted values and constants defined earlier
         NumDays = TripEndDate.day - TripStartDate.day
+        if NumDays == 0:
+            NumDays = 1
         PerDiemAmt = NumDays * DAILY_RATE
         Mileage = 0
-        TotKilos = 0
+        if OwnCar == "R":
+            TotKilos = 0
         if OwnCar == "O":
             Mileage = TotKilos * MILEAGE_OWN
         else:
